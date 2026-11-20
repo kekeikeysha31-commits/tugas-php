@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Anggota Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h3>Formulir Pendaftaran Anggota Baru</h3>
+        
+        <form action="#" method="POST">
+            
+            <!-- Keyasha Putri Septiani -->
+            <div class="form-row">
+                <label for="nama">Nama Lengkap:</label>
+                <div class="input-container">
+                    <input type="text" id="nama" name="nama" placeholder="Isi nama Anda" required>
+                </div>
+            </div>
+
+            <!-- kekeikeysha31@gmail.com -->
+            <div class="form-row">
+                <label for="email">Alamat Email:</label>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+            </div>
+
+            <!-- kekei1233 -->
+            <div class="form-row">
+                <label for="password">Kata Sandi:</label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="••••••••••••" required>
+                </div>
+            </div>
+
+            <!-- Pilih Minat Utama -->
+            <div class="form-section">
+                <label class="section-label">Pilih Minat Utama (Satu):</label>
+                <div class="grid-options">
+                    <label class="option-item">
+                        <input type="radio" name="minat" value="Pengembangan Web" checked> Pengembangan Web
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="minat" value="Desain Grafis"> Desain Grafis
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="minat" value="Kriptografi"> Kriptografi
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="minat" value="Analis Data"> Analis Data
+                    </label>
+                </div>
+            </div>
+
+            <!-- Area Keahlian -->
+            <div class="form-section">
+                <label class="section-label">Area Keahlian (Pilih semua yang sesuai):</label>
+                <div class="grid-options">
+                    <label class="option-item">
+                        <input type="checkbox" name="keahlian" value="HTML/CSS"> HTML/CSS
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="keahlian" value="JavaScript/Node.js" checked> JavaScript/Node.js
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="keahlian" value="Python" checked> Python
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="keahlian" value="Desain UI/UX"> Desain UI/UX
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="keahlian" value="Pemasaran Digital"> Pemasaran Digital
+                    </label>
+                </div>
+            </div>
+
+            <!-- Negara Asal -->
+            <div class="form-row">
+                <label for="negara">Negara Asal:</label>
+                <div class="input-container">
+                    <select id="negara" name="negara" required>
+                        <option value="" disabled selected>Pilih Negara | ˅</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Singapura">Singapura</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Tombol Daftar -->
+            <div class="button-row">
+                <button type="submit" class="btn-submit">[Daftar Sekarang]</button>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

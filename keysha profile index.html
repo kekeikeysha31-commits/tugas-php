@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Saya</title>
+
+    <style>
+        /* CSS UTAMA */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e486df;
+            color: #eef090;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background: #f195c0;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h2 {
+            color: rgb(241, 46, 153);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: rgb(250, 84, 139);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #f5d0fe;
+        }
+
+        /* HALAMAN UTAMA */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h3 {
+            color: #8054d6;
+            margin-bottom: 12px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #6c3cc9;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .tombol:hover {
+            background: #4d249b;
+        }
+
+        /* FOTO PROFIL */
+        .foto {
+            width: 230px;
+            height: 280px;
+            border-radius: 25px;
+            border: 5px solid white;
+            background: #e5d5ff;
+            box-shadow: 0 8px 25px #d0bdf2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        /* BAGIAN DATA */
+        section {
+            padding: 60px 10%;
+            scroll-margin-top: 20px;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #6c3cc9;
+        }
+
+        .kartu {
+            background: rgb(247, 144, 224);
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px #e3d7f5;
+            margin-bottom: 20px;
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .data p {
+            background: #f38ac7;
+            padding: 15px;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        .kartu h3 {
+            color: #6c3cc9;
+            margin-bottom: 12px;
+        }
+
+        .kartu p,
+        .kartu li {
+            line-height: 1.8;
+        }
+
+        .kartu ul {
+            padding-left: 22px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #6c3cc9;
+            color: rgb(243, 54, 126);
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* TAMPILAN HP */
+        @media (max-width: 700px) {
+            nav {
+                justify-content: center;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 45px 7%;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .data {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <h2>MyProfile.</h2>
+
+        <ul>
+            <li><a href="#profil">Beranda</a></li>
+            <li><a href="#data">Data Saya</a></li>
+            <li><a href="#mapel">Mata Pelajaran</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#ekskul">Ekstrakurikuler</a></li>
+        </ul>
+    </nav>
+
+    <!-- HALAMAN UTAMA -->
+    <main>
+        <div class="hero" id="profil">
+
+            <div class="hero-text">
+                <h3>HALOO HALO SELAMAT DATANG!</h3>
+
+                <h1>Profil Pribadi Saya</h1>
+
+                <p>
+                    Perkenalkan, nama saya keysha putri septiani kalian bisa panggil saya kekei.
+                    Saya siswi kelas X RPL 3 di
+                    SMK Negeri 1 Gunung Putri.
+                    Saya tertarik mempelajari teknologi,
+                    pemprograman, dan pengembangan website, salam kenal semua.
+                </p>
+
+                <a href="#data" class="tombol">
+                    Lihat Profil Saya
+                </a>
+            </div>
+
+            <div class="foto">
+                <!-- Ganti foto-profil.jpg dengan nama file foto kamu -->
+                <img src="c:\Users\USER\Downloads\jepreto-regular-1793671370980.png"
+                     alt="Foto profile keysha putri septiani"
+                     onerror="this.style.display='none';
+                     this.parentElement.innerHTML='Tempat Foto Profil';">
+            </div>
+
+        </div>
+
+        <!-- DATA PRIBADI -->
+        <section id="data">
+            <h2 class="judul">Data Pribadi Saya</h2>
+
+            <div class="kartu data">
+                <p><b>Nama:</b> keysha putri septiani</p>
+                <p><b>Tempat, Tanggal Lahir:</b> Bogor, 06-juni-2011</p>
+                <p><b>Alamat:</b> kp.parung tanjung, cicadas, gunungputri, bogor</p>
+                <p><b>Email:</b> kekeikeysha31@gmail.com</p>
+                <p><b>Kelas:</b> X RPL 3</p>
+                <p><b>Sekolah:</b> SMK Negeri 1 Gunung Putri</p>
+                <p><b>Hobi:</b> bernyanyi dan menonton film</p>
+                <p><b>Motto:</b> kesuksesan itu seperti sekumpulan tempe, tidak ada yang tahu.</p>
+            </div>
+        </section>
+
+        <!-- MATA PELAJARAN -->
+        <section id="mapel">
+            <h2 class="judul">Mata Pelajaran</h2>
+
+            <div class="kartu">
+                <h3>Mata Pelajaran yang Saya Pelajari</h3>
+                <ul>
+                    <li>Matematika</li>
+                    <li>Informatika</li>
+                    <li>Bahasa Indonesia</li>
+                    <li>Bahasa Inggris/jepang</li>
+                    <li>Pendidikan pancasila</li>
+                    <li>Sejarah</li>
+                    <li>Dasar Kemampuan Kejuruan RPL</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio">
+            <h2 class="judul">Portfolio Saya</h2>
+
+            <div class="kartu">
+                <h3>Proyek dan Hasil Belajar</h3>
+                <p>
+                    Berikut adalah beberapa proyek yang ingin
+                    saya kembangkan selama belajar di jurusan RPL.
+                </p>
+                <ul>
+                    <li>Membuat website profil pribadi.</li>
+                    <li>Membuat program sederhana Python.</li>
+                    <li>Mempelajari HTML.</li>
+                    <li>Mempelajari CSS.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EKSTRAKURIKULER -->
+        <section id="ekskul">
+            <h2 class="judul">Ekstrakurikuler</h2>
+
+            <div class="kartu">
+                <h3>Kegiatan yang Saya Ikuti</h3>
+                <p>
+                    Saya mengikuti ekstrakurikuler:
+                    <b>badmintoon.</b>
+                </p>
+                <p>
+                    Melalui kegiatan ini, saya ingin menambah
+                    pengalaman, menambah relasi, melatih kedisiplinan,
+                    dan belajar bekerja sama dengan teman.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PENUTUP -->
+    <footer>
+        <p>© 2026 Profil Pribadi Saya</p>
+        <p>Belajar, Berkarya, dan Terus Berkembang.</p>
+    </footer>
+
+</body>
+</html>
